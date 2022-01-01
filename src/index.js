@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import {context} from './context/context'
+import Co from './context/Co';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Co>
     <App />
+    </Co>
   </React.StrictMode>,
   document.getElementById('root')
 );
