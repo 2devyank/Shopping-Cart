@@ -18,13 +18,13 @@ const Header = () => {
                     <FormControl placeholder="Search a product" style={{ width: 400 ,height:30,borderRadius:14}} className="m-auto" />
                 </Navbar.Text>
                 <Nav>
-                    <Dropdown alignRight>
+                    <Dropdown >
                         <Dropdown.Toggle variant="success"  >
                             <FiShoppingCart color="white" fontSize="25px" />
                             <Badge variant="success">{cart.length}</Badge>
                         </Dropdown.Toggle>
 
-                        <Dropdown.Menu   align={{ lg: 'start' }} style={{ minWidth: 370 }}> 
+                        <Dropdown.Menu   align={{ lg: 'end' }} style={{ minWidth: 370 }}> 
                         {cart.length?(
                           <>
                           {
